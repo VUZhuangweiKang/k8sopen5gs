@@ -4,6 +4,7 @@ sudo apt-get install apt-transport-https ca-certificates curl software-propertie
 
 # install docker
 sudo apt install -y docker.io
+sudo usermod -aG docker $USER
 
 # install k8s
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add
